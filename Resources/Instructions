@@ -1,1 +1,11 @@
 
+Instructions on installing the Application: (Assignment 1)
+
+1. The app was made using Angular 4. After downloading it from the github link sent in the email,
+you have to download the modules using npm. It will automatically download the proper modules based on package-json
+2. Call ng serve using the terminal and the app should run on localhost:4200
+3. This app did not make use of a state manager
+
+I have attached screen shots of the app showing what it should look like after installing it.
+
+
