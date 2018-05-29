@@ -1,0 +1,25 @@
+<div class="wrapper">
+ 
+
+  <ul style="margin-top:100px;" class="list-group">
+      <li class="list-group-item">
+        <div class="details">
+        <a>{{gifsArraySingle.data.title}}</a>
+        </div>
+        
+        <img src="{{gifsArraySingle.data.images.original.url}}"/>
+        <div>{{gifsArraySingle.data.caption}}</div>
+        <div class="feedback">{{feedback}}</div>
+      </li>
+      <div ng-controller="ExampleController">
+        
+          <button class="fav" (click)="addLike()" ng-click="doGreeting(message)">Favourite Gif</button>
+          
+        </div>
+    </ul>
+    
+      
+
+</div>
+
+

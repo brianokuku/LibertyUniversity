@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <div class="search_div">
+      <form  [formGroup]="searchForm" (ngSubmit)="search()">
+          
+          <input style="width:500px;height:25px;" placeholder="Search for Gif" formControlName="title">               
+          
+          <button matButton >Search</button>
+      </form>
+  </div>
+
+  <ul style="margin-top:20px;" class="list-group">
+    <li *ngFor="let gf of gifsArray.data" class="list-group-item">
+      
+      <div class="details">
+      <a [routerLink]="['profile', gf.id]" >{{gf.title}}<br/><br/><span>Click here to like and view details</span></a>
+      </div>
+
+      <img src="{{gf.images.fixed_width.url}}"/>
+      
+    </li>
+  </ul>
+</div>
